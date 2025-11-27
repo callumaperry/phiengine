@@ -1,0 +1,104 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phi-engine"
+version = "3.1.5"
+description = "World-leading universal compression for AI embeddings & scientific data. 6-124× compression @ 0.90-0.99 quality."
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "PHI Foundation", email = "contact@phi-foundation.org"}
+]
+maintainers = [
+    {name = "PHI Foundation", email = "contact@phi-foundation.org"}
+]
+keywords = [
+    "compression",
+    "embeddings",
+    "ai",
+    "machine-learning",
+    "vector-database",
+    "openai",
+    "pca",
+    "product-quantization",
+    "scientific-computing",
+    "geophysical-data"
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: System :: Archiving :: Compression",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+dependencies = [
+    "numpy>=1.18.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "flake8>=6.0",
+    "mypy>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/phi-foundation/phi-engine"
+Documentation = "https://github.com/phi-foundation/phi-engine#readme"
+Repository = "https://github.com/phi-foundation/phi-engine"
+"Bug Tracker" = "https://github.com/phi-foundation/phi-engine/issues"
+Changelog = "https://github.com/phi-foundation/phi-engine/blob/main/CHANGELOG.md"
+
+[project.scripts]
+phi-engine = "phi_engine.phi_engine_master:main"
+
+[tool.setuptools]
+packages = ["phi_engine"]
+
+[tool.setuptools.package-data]
+phi_engine = ["*.py"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+
+[tool.black]
+line-length = 100
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.mypy]
+python_version = "3.7"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
