@@ -58,6 +58,13 @@ python examples/example_text_compression.py
 
 ---
 
+## Running tests
+```bash
+source venv/bin/activate && python -m pytest test -v
+```
+
+---
+
 ## Running the Examples
 
 ### Requirements
