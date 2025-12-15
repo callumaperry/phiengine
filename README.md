@@ -186,6 +186,23 @@ Based on 100K vector validation:
 - **Results:** 29×–62× compression, 52–55 dB PSNR, cosine 0.93–0.99
 - **Significance:** These tests demonstrate PHI Engine's ability to operate at near-million-scale vector workloads without degradation.
 
+## 🔬 Validation Highlights (Read First)
+
+Across synthetic, OpenAI-style, and real Kaggle datasets, PHI Engine has been validated at scale.
+
+**Observed results:**
+- Phase-1 (Production): 6× – 20× compression @ 0.98–0.994 cosine
+- Phase-2 (Archival): 90× – 124× typical
+- **Phase-2 (Extreme cases): up to 204× compression**
+- **Total vectors tested across datasets: ~350,000+**
+
+Extreme ratios occur under specific archival configurations and are documented in:
+- LARGE_SCALE_VALIDATION_UPDATES.md
+- BENCHMARKS.md
+- REAL_DATA_ANALYSIS.md
+
+These results exceed standard FAISS PQ baselines under comparable quality constraints.
+
 ---
 
 ## Next Steps
