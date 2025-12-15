@@ -209,3 +209,14 @@ This repository represents the reference implementation of the patented system.
 - Technical details: See `docs/TECHNICAL_SUMMARY.md`
 - Integration guide: See `docs/INTEGRATION_GUIDE.md`
 - Full API: See main `README.md`
+
+⚠️ Patent Pending (UK application filed Dec 2025)
+
+This repository contains:
+• The PHI Engine core implementation
+• Reproducible benchmarks and validation
+• A consolidated acquisition / diligence pack
+
+Start here:
+→ START_HERE.md
+→ ACQUISITION_PACK_README.md
