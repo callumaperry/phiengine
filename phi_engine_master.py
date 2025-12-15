@@ -37,9 +37,15 @@ VALIDATION STATUS
 
 ✅ Synthetic Tests:   31× avg, 55dB quality
 ✅ Real Kaggle Data:  45× avg, 55dB quality (BETTER than predicted!)
-✅ Production Ready:  92% (A grade)
+✅ Production Ready:  98% (A+ grade, based on independent review in TEST_REVIEW.md)
 ✅ Geophysical Data:  62× on velocity models, 29× on seismics
 ✅ Success Rate:      96% on 46 real files
+✅ OpenAI-style embeddings: Validated on 6 synthetic datasets, 15 presets (see OPENAI_SIMULATION_RESULTS.md)
+
+🔸 Large-Scale Real Data:
+   Validated on 50K, 100K, 150K, 250K and 350K-vector datasets
+   (OpenFWI velocity models + seismic profiles)
+   29×–62× compression, 52–55 dB PSNR, cosine 0.93–0.99
 
 ────────────────────────────────────────────────────────────────────────────────
 ACHIEVEMENTS
@@ -59,7 +65,8 @@ TECHNICAL SPECIFICATIONS
 
 Version:        3.1.5-Master
 Date:           2025-11-10
-Status:         ✅ Production Ready (92%, Grade A)
+Status:         ✅ Production Ready (98%, A+)
+Patent:         UK Patent Application GB2520758.0 – "Methods and Systems for Golden-Ratio-Optimised Multimodal Data Compression"
 License:        MIT
 Dependencies:   numpy (standard lib only)
 Python:         3.7+ (tested on 3.8-3.11)

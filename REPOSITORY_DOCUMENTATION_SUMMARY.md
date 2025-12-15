@@ -258,7 +258,7 @@ This is EXACTLY what acquisition teams want.
 - [x] Test methodology documentation
 
 ### In Progress 🔄
-- [ ] FAISS comparison tests
+- [ ] FAISS comparison tests (design complete; implementation pending)
 - [ ] Additional benchmark datasets
 - [ ] Performance profiling
 

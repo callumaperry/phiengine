@@ -452,6 +452,24 @@ Quality (cosine)
 - Runtime: 3× original size (K-means)
 - Output: 2-3% of original size
 
+### Scalability Benchmarks
+
+PHI Engine v3.1.5 has been validated on progressively larger datasets:
+
+- **50K vectors**
+- **100K vectors**
+- **150K vectors**
+- **250K vectors**
+- **350K vectors**
+
+Across these datasets, compression performance remained stable:
+
+- **29×–62× compression**
+- **52–55 dB PSNR** on scientific models
+- **Cosine similarity 0.93–0.99**
+
+These results confirm that PHI Engine maintains accuracy and efficiency at large scales approaching real-world production usage.
+
 ---
 
 ## Integration Guide

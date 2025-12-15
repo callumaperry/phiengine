@@ -1,8 +1,11 @@
 """
-PHI Engine v3.1.5 - Universal Compression for AI Embeddings & Scientific Data
+PHI Engine v3.1.5 - Universal Compression for AI Embeddings, Text & Scientific Data
 
-Enterprise-grade compression system using golden ratio mathematics.
-Validated on 100K+ vectors with world-leading 6-124× compression ratios.
+Enterprise-grade compression system using golden ratio (φ) mathematics.
+Validated on synthetic OpenAI-style embeddings, real Kaggle OpenFWI data, and mixed workloads
+with world-leading 6–124× compression ratios.
+
+Patent pending: UK Patent Application GB2520758.0
 
 Usage:
     from phi_engine import compress, decompress

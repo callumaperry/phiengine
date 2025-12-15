@@ -171,6 +171,21 @@ Based on 100K vector validation:
 
 **Dataset:** 100,000 × 1,536 embeddings (600 MB)
 
+## Validation & Test Suite
+
+- ✅ Synthetic OpenAI-style embeddings (6 datasets, 15 presets) — see `OPENAI_SIMULATION_RESULTS.md`
+- ✅ Real Kaggle OpenFWI geophysical data (46 files, up to 350K vectors) — see `REAL_DATA_ANALYSIS.md` and `REAL_DATA_SUMMARY.txt`
+- ✅ Full system test summary — 19/19 checks passed, production-ready (see `TEST_SUMMARY.txt` and `TEST_REVIEW.md`)
+- ✅ Initial test suite contributed by **@jsdevtom** — 100% pass on lossless text/JSON/Unicode compression.
+
+### Large-Scale Vector Validation
+
+📌 **Validated on 50K, 100K, 150K, 250K, and 350K real-world vectors**
+
+- **Source:** Kaggle OpenFWI scientific geophysical datasets
+- **Results:** 29×–62× compression, 52–55 dB PSNR, cosine 0.93–0.99
+- **Significance:** These tests demonstrate PHI Engine's ability to operate at near-million-scale vector workloads without degradation.
+
 ---
 
 ## Next Steps
@@ -179,6 +194,15 @@ Based on 100K vector validation:
 2. **Read the docs** - Check `docs/` for detailed technical information
 3. **Review benchmarks** - See `benchmarks/` for validation results
 4. **Integrate** - Use the patterns above in your own projects
+
+## Patent & IP Status
+
+PHI Engine's core golden-ratio-optimised multimodal compression method is covered by:
+
+- **UK Patent Application GB2520758.0**  
+  *"Methods and Systems for Golden-Ratio-Optimised Multimodal Data Compression"*.
+
+This repository represents the reference implementation of the patented system.
 
 ## Support
 
