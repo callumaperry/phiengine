@@ -320,3 +320,10 @@ Production Ready | Patent Pending | Acquisition Ready
 ---
 
 *Most users start with [QUICK_START.md](QUICK_START.md) →*
+
+# PHI Engine — Start Here
+
+If you are:
+• Evaluating the technology → see BENCHMARKS.md
+• Running the code → see QUICK_START.md
+• Reviewing for acquisition → see LATEST_UPDATED_MASTER_DOCUMENTATION/
