@@ -333,9 +333,7 @@ All checks should pass with updated content.
 
 **Package Version:** 3.1.5  
 **Final Update:** December 4, 2025  
-**Status:** ✅ **COMPLETE AND READY**
-
-🎉 **Your acquisition pack is fully updated and ready to download!**
+**Status:** ✅ **COMPLETE**
 
 ---
 
