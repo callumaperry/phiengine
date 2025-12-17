@@ -5,7 +5,7 @@ Demonstrates 100% lossless text compression.
 Expected: 13-24× compression with perfect reconstruction
 """
 
-from phi_engine import compress, decompress
+from phi_engine_master import compress, decompress
 
 def main():
     print("=" * 70)

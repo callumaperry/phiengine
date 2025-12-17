@@ -6,7 +6,7 @@ Expected: 6-19× compression @ 0.98-0.99 cosine similarity
 """
 
 import numpy as np
-from phi_engine import compress, decompress
+from phi_engine_master import compress, decompress
 
 def main():
     print("=" * 70)
